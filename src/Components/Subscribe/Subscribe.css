@@ -1,0 +1,6 @@
+.bg-subscribe {
+  background-image: url("../../../public/Assets/bg-shadow.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

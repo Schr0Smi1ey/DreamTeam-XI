@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Viral Kohli",
+    "country": "India",
+    "role": "All-Rounder",
+    "rating": "8.5",
+    "batHand": "Left-Hand-Bat",
+    "price": "$1500000",
+    "img": "https://i.ibb.co.com/F385qjb/Virat-kohli.png"
+  },
+  {
+    "name": "Steve Smith",
+    "country": "Australia",
+    "role": "Batsman",
+    "rating": "8.9",
+    "batHand": "Right-Hand-Bat",
+    "price": "$1400000",
+    "img": "https://i.ibb.co.com/JmSj14C/Steve-smith.jpg"
+  },
+  {
+    "name": "Joe Root",
+    "country": "England",
+    "role": "Batsman",
+    "rating": "8.6",
+    "batHand": "Right-Hand-Bat",
+    "price": "$1350000",
+    "img": "https://i.ibb.co.com/gw2hhtk/Joe-root.jpg"
+  },
+  {
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "role": "Batsman",
+    "rating": "8.7",
+    "batHand": "Right-Hand-Bat",
+    "price": "$1300000",
+    "img": "https://i.ibb.co.com/6PD8Trb/Kane-Williamson.png"
+  },
+  {
+    "name": "Ben Stokes",
+    "country": "England",
+    "role": "All-Rounder",
+    "rating": "9.0",
+    "batHand": "Left-Hand-Bat",
+    "price": "$1450000",
+    "img": "https://i.ibb.co.com/j6QNRkb/Ben-stokes.png"
+  },
+  {
+    "name": "David Warner",
+    "country": "Australia",
+    "role": "Batsman",
+    "rating": "8.4",
+    "batHand": "Left-Hand-Bat",
+    "price": "$1200000",
+    "img": "https://i.ibb.co.com/2y85q0J/David-warner.jpg"
+  },
+  {
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "role": "Bowler",
+    "rating": "8.3",
+    "batHand": "Right-Hand-Bat",
+    "price": "$1250000",
+    "img": "https://i.ibb.co.com/wSX5j2v/Rashid-khan.png"
+  },
+  {
+    "name": "AB de Villiers",
+    "country": "South Africa",
+    "role": "Batsman",
+    "rating": "9.2",
+    "batHand": "Right-Hand-Bat",
+    "price": "$1500000",
+    "img": "https://i.ibb.co.com/8gv2WSm/AB-De-villiars.jpg"
+  },
+  {
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "role": "Batsman",
+    "rating": "9.1",
+    "batHand": "Right-Hand-Bat",
+    "price": "$1400000",
+    "img": "https://i.ibb.co.com/hy7jVX3/Babar-azam.jpg"
+  },
+  {
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "role": "Bowler",
+    "rating": "8.8",
+    "batHand": "Right-Hand-Bat",
+    "price": "$1300000",
+    "img": "https://i.ibb.co.com/qDVR925/Jasprit-bumrah.png"
+  },
+  {
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "role": "Bowler",
+    "rating": "8.5",
+    "batHand": "Right-Hand-Bat",
+    "price": "$1250000",
+    "img": "https://i.ibb.co.com/6Ht064h/Trent-boult.jpg"
+  },
+  {
+    "name": "Quinton de Kock",
+    "country": "South Africa",
+    "role": "Wicket-Keeper",
+    "rating": "8.6",
+    "batHand": "Left-Hand-Bat",
+    "price": "$1350000",
+    "img": "https://i.ibb.co.com/6rwtBw6/Quinton-De-cock.jpg"
+  },
+  {
+    "name": "Hardik Pandya",
+    "country": "India",
+    "role": "All-Rounder",
+    "rating": "8.7",
+    "batHand": "Right-Hand-Bat",
+    "price": "$1400000",
+    "img": "https://i.ibb.co.com/nRcQqsx/Hardik-pandya.png"
+  },
+  {
+    "name": "Mitchell Starc",
+    "country": "Australia",
+    "role": "Bowler",
+    "rating": "8.4",
+    "batHand": "Left-Hand-Bat",
+    "price": "$1300000",
+    "img": "https://i.ibb.co.com/cxh8QXB/Mitchell-Starc.jpg"
+  },
+  {
+    "name": "Moeen Ali",
+    "country": "England",
+    "role": "All-Rounder",
+    "rating": "8.3",
+    "batHand": "Left-Hand-Bat",
+    "price": "$1200000",
+    "img": "https://i.ibb.co.com/pRNgZG8/Moeen-Ali.png"
+  }
+]
