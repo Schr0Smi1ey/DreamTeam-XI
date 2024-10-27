@@ -1,8 +1,15 @@
 import logo from "../../../public/Assets/logo.png";
 import PropType from "prop-types";
 import coinLogo from "../../../public/Assets/coin.svg";
+import { useState } from "react";
 
 const NavBar = ({ coin }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
   const navOptions = (
     <div
       className={`flex flex-col lg:flex-row lg:justify-between items-center lg:pt-5 lg:space-x-10`}
@@ -61,9 +68,13 @@ const NavBar = ({ coin }) => {
 
       <div>
         <ul className="hidden lg:flex px-1">{navOptions}</ul>
-
         <div className="dropdown dropdown-left">
-          <div tabIndex={0} role="button" className="lg:hidden">
+          <div
+            tabIndex={0}
+            role="button"
+            className="lg:hidden"
+            onClick={toggleDropdown}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-8 w-8"
@@ -79,12 +90,14 @@ const NavBar = ({ coin }) => {
               />
             </svg>
           </div>
-          <ul
-            tabIndex={0}
-            className="menu dropdown-content bg-white text-black rounded-box space-y-1 z-[1] mt-3 p-2"
-          >
-            {navOptions}
-          </ul>
+          {isOpen && (
+            <ul
+              tabIndex={0}
+              className="menu dropdown-content bg-white text-black rounded-box space-y-1 z-[1] mt-3 p-2"
+            >
+              {navOptions}
+            </ul>
+          )}
         </div>
       </div>
     </div>
