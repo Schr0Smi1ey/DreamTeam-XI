@@ -1,56 +1,45 @@
 import logo from "../../../public/Assets/logo.png";
 import { BsCoin } from "react-icons/bs";
+import PropType from "prop-types";
 
-const NavBar = () => {
+const NavBar = ({ coin }) => {
   const navOptions = (
     <div
-      className={`flex flex-col lg:flex-row lg:justify-between items-center lg:pt-5 lg:space-x-10 ${
-        scroll ? "text-black" : "lg:text-white text-black"
-      }`}
+      className={`flex flex-col lg:flex-row lg:justify-between items-center lg:pt-5 lg:space-x-10`}
     >
       <li>
         <a
-          className={`relative text-base lg:text-xl font-semibold transition-all duration-500 ${
-            scroll ? "hover:text-white" : "link-hover"
-          }`}
+          className={`relative text-base lg:text-xl font-semibold transition-all duration-500`}
         >
           Home
         </a>
       </li>
       <li>
         <a
-          className={`relative text-base lg:text-xl font-semibold transition-all duration-500 ${
-            scroll ? "hover:text-white" : "link-hover"
-          }`}
+          className={`relative text-base lg:text-xl font-semibold transition-all duration-500`}
         >
           Fixture
         </a>
       </li>
       <li>
         <a
-          className={`relative text-base lg:text-xl font-semibold transition-all duration-500 ${
-            scroll ? "hover:text-white" : "link-hover"
-          }`}
+          className={`relative text-base lg:text-xl font-semibold transition-all duration-500`}
         >
           Teams
         </a>
       </li>
       <li>
         <a
-          className={`relative text-base lg:text-xl font-semibold transition-all duration-500 ${
-            scroll ? "hover:text-white" : "link-hover"
-          }`}
+          className={`relative text-base lg:text-xl font-semibold transition-all duration-500`}
         >
           Schedules
         </a>
       </li>
       <li>
         <p
-          className={`flex items-center border-2 border-black p-2 space-x-2 relative text-lg lg:text-2xl shadow-lg rounded-lg font-semibold transition-all duration-500 ${
-            scroll ? "hover:text-white" : "link-hover"
-          }`}
+          className={`flex items-center border-2 border-black px-4 p-2 space-x-2 relative text-lg lg:text-2xl shadow-lg rounded-lg font-semibold transition-all duration-500 `}
         >
-          <span className="mr-2">0 </span> Coin
+          <span className="mr-2">{coin} </span> Coin
           <span className="text-[#e3cb47]">
             <BsCoin />
           </span>
@@ -105,6 +94,10 @@ const NavBar = () => {
       </div>
     </div>
   );
+};
+
+NavBar.propTypes = {
+  coin: PropType.number.isRequired,
 };
 
 export default NavBar;

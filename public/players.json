@@ -1,137 +1,167 @@
 [
   {
+    "id": 1,
     "name": "Viral Kohli",
     "country": "India",
     "role": "All-Rounder",
     "rating": "8.5",
     "batHand": "Left-Hand-Bat",
-    "price": "$1500000",
+    "bowlHand": "Right-Arm Medium",
+    "price": "1500000",
     "img": "https://i.ibb.co.com/F385qjb/Virat-kohli.png"
   },
   {
+    "id": 2,
     "name": "Steve Smith",
     "country": "Australia",
     "role": "Batsman",
     "rating": "8.9",
     "batHand": "Right-Hand-Bat",
-    "price": "$1400000",
-    "img": "https://i.ibb.co.com/JmSj14C/Steve-smith.jpg"
+    "bowlHand": "N/A",
+    "price": "1400000",
+    "img": "https://i.ibb.co.com/xFnv3Zw/Steve-smith.jpg"
   },
   {
+    "id": 3,
     "name": "Joe Root",
     "country": "England",
     "role": "Batsman",
     "rating": "8.6",
     "batHand": "Right-Hand-Bat",
-    "price": "$1350000",
+    "bowlHand": "Right-Arm Offbreak",
+    "price": "1350000",
     "img": "https://i.ibb.co.com/gw2hhtk/Joe-root.jpg"
   },
   {
+    "id": 4,
     "name": "Kane Williamson",
     "country": "New Zealand",
     "role": "Batsman",
     "rating": "8.7",
     "batHand": "Right-Hand-Bat",
-    "price": "$1300000",
+    "bowlHand": "Right-Arm Offbreak",
+    "price": "1300000",
     "img": "https://i.ibb.co.com/6PD8Trb/Kane-Williamson.png"
   },
   {
+    "id": 5,
     "name": "Ben Stokes",
     "country": "England",
     "role": "All-Rounder",
     "rating": "9.0",
     "batHand": "Left-Hand-Bat",
-    "price": "$1450000",
+    "bowlHand": "Right-Arm Medium Fast",
+    "price": "1450000",
     "img": "https://i.ibb.co.com/j6QNRkb/Ben-stokes.png"
   },
   {
+    "id": 6,
     "name": "David Warner",
     "country": "Australia",
     "role": "Batsman",
     "rating": "8.4",
     "batHand": "Left-Hand-Bat",
-    "price": "$1200000",
-    "img": "https://i.ibb.co.com/2y85q0J/David-warner.jpg"
+    "bowlHand": "N/A",
+    "price": "1200000",
+    "img": "https://i.ibb.co.com/GRW90qg/David-warner.jpg"
   },
   {
+    "id": 7,
     "name": "Rashid Khan",
     "country": "Afghanistan",
     "role": "Bowler",
     "rating": "8.3",
     "batHand": "Right-Hand-Bat",
-    "price": "$1250000",
+    "bowlHand": "Right-Arm Leg Spin",
+    "price": "1250000",
     "img": "https://i.ibb.co.com/wSX5j2v/Rashid-khan.png"
   },
   {
+    "id": 8,
     "name": "AB de Villiers",
     "country": "South Africa",
     "role": "Batsman",
     "rating": "9.2",
     "batHand": "Right-Hand-Bat",
-    "price": "$1500000",
-    "img": "https://i.ibb.co.com/8gv2WSm/AB-De-villiars.jpg"
+    "bowlHand": "N/A",
+    "price": "1500000",
+    "img": "https://i.ibb.co.com/MRKYT0B/AB-De-villiars.jpg"
   },
   {
+    "id": 9,
     "name": "Babar Azam",
     "country": "Pakistan",
     "role": "Batsman",
     "rating": "9.1",
     "batHand": "Right-Hand-Bat",
-    "price": "$1400000",
+    "bowlHand": "N/A",
+    "price": "1400000",
     "img": "https://i.ibb.co.com/hy7jVX3/Babar-azam.jpg"
   },
   {
+    "id": 10,
     "name": "Jasprit Bumrah",
     "country": "India",
     "role": "Bowler",
     "rating": "8.8",
     "batHand": "Right-Hand-Bat",
-    "price": "$1300000",
+    "bowlHand": "Right-Arm Fast",
+    "price": "1300000",
     "img": "https://i.ibb.co.com/qDVR925/Jasprit-bumrah.png"
   },
   {
+    "id": 11,
     "name": "Trent Boult",
     "country": "New Zealand",
     "role": "Bowler",
     "rating": "8.5",
     "batHand": "Right-Hand-Bat",
-    "price": "$1250000",
+    "bowlHand": "Left-Arm Fast Medium",
+    "price": "1250000",
     "img": "https://i.ibb.co.com/6Ht064h/Trent-boult.jpg"
   },
   {
+    "id": 12,
     "name": "Quinton de Kock",
     "country": "South Africa",
     "role": "Wicket-Keeper",
     "rating": "8.6",
     "batHand": "Left-Hand-Bat",
-    "price": "$1350000",
+    "bowlHand": "N/A",
+    "price": "1350000",
     "img": "https://i.ibb.co.com/6rwtBw6/Quinton-De-cock.jpg"
   },
   {
+    "id": 13,
     "name": "Hardik Pandya",
     "country": "India",
     "role": "All-Rounder",
     "rating": "8.7",
     "batHand": "Right-Hand-Bat",
-    "price": "$1400000",
+    "bowlHand": "Right-Arm Medium Fast",
+    "price": "1400000",
     "img": "https://i.ibb.co.com/nRcQqsx/Hardik-pandya.png"
   },
   {
+    "id": 14,
     "name": "Mitchell Starc",
     "country": "Australia",
     "role": "Bowler",
     "rating": "8.4",
     "batHand": "Left-Hand-Bat",
-    "price": "$1300000",
+    "bowlHand": "Left-Arm Fast",
+    "price": "1300000",
     "img": "https://i.ibb.co.com/cxh8QXB/Mitchell-Starc.jpg"
   },
   {
+    "id": 15,
     "name": "Moeen Ali",
     "country": "England",
     "role": "All-Rounder",
     "rating": "8.3",
     "batHand": "Left-Hand-Bat",
-    "price": "$1200000",
-    "img": "https://i.ibb.co.com/pRNgZG8/Moeen-Ali.png"
+    "bowlHand": "Right-Arm Off Spin",
+    "price": "1200000",
+    "img": "https://i.ibb.co.com/zn01z03/Moeen-Ali.png"
   }
 ]
