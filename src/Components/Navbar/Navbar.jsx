@@ -40,14 +40,10 @@ const NavBar = ({ coin }) => {
           className={`flex items-center border-2 border-black lg:px-4 lg:p-2 relative text-lg lg:text-2xl shadow-lg rounded-lg font-semibold transition-all duration-500 `}
         >
           <div>
-            <h1>{coin} Coin</h1>
+            <h1 className="mr-2">{coin} Coin</h1>
           </div>
           <div>
-            <img
-              src={coinLogo}
-              alt=""
-              className="w-8 h-8"
-            />
+            <img src={coinLogo} alt="" className="w-8 h-8" />
           </div>
         </div>
       </li>
