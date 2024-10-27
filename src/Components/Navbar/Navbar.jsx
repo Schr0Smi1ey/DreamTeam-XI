@@ -1,6 +1,6 @@
 import logo from "../../../public/Assets/logo.png";
-import { BsCoin } from "react-icons/bs";
 import PropType from "prop-types";
+import coinLogo from "../../../public/Assets/coin.svg";
 
 const NavBar = ({ coin }) => {
   const navOptions = (
@@ -36,25 +36,27 @@ const NavBar = ({ coin }) => {
         </a>
       </li>
       <li>
-        <p
-          className={`flex items-center border-2 border-black px-4 p-2 space-x-2 relative text-lg lg:text-2xl shadow-lg rounded-lg font-semibold transition-all duration-500 `}
+        <div
+          className={`flex items-center border-2 border-black lg:px-4 lg:p-2 relative text-lg lg:text-2xl shadow-lg rounded-lg font-semibold transition-all duration-500 `}
         >
-          <span className="mr-2">{coin} </span> Coin
-          <span className="text-[#e3cb47]">
-            <BsCoin />
-          </span>
-        </p>
+          <div>
+            <h1>{coin} Coin</h1>
+          </div>
+          <div>
+            <img
+              src={coinLogo}
+              alt=""
+              className="w-8 h-8"
+            />
+          </div>
+        </div>
       </li>
     </div>
   );
 
   return (
     <div
-      className={`container mx-auto center z-[70] py-2 px-5 flex justify-between items-center my-5 sticky top-0 text-white transition-all duration-500 -translate-y-4 ${
-        scroll
-          ? "bg-gradient-to-r from-[#dc9c4d] to-[#7653df] mt-4 rounded-b-2xl"
-          : "bg-opacity-0"
-      }`}
+      className={`container mx-auto mb-10 center z-[70] py-2 px-5 flex justify-between items-center sticky top-0 text-white transition-all duration-500 bg-gradient-to-r from-yellow-400 to-sky-400`}
     >
       <div className="w-2/12">
         <div>
@@ -67,8 +69,8 @@ const NavBar = ({ coin }) => {
       <div>
         <ul className="hidden lg:flex px-1">{navOptions}</ul>
 
-        <div className="dropdown dropdown-left">
-          <div tabIndex={0} role="button" className="lg:hidden -translate-x-1">
+        <div className="dropdown dropdown-left w-full">
+          <div tabIndex={0} role="button" className="lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -86,7 +88,7 @@ const NavBar = ({ coin }) => {
           </div>
           <ul
             tabIndex={0}
-            className="menu dropdown-content bg-white rounded-box z-[1] mt-3 w-fit p-2"
+            className="menu dropdown-content w-fit bg-white text-black rounded-box space-y-1 z-[1] mt-3 p-2"
           >
             {navOptions}
           </ul>

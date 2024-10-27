@@ -3,6 +3,7 @@ import Banner from "./Components/Banner/Banner";
 import Footer from "./Components/Footer/Footer";
 import NavBar from "./Components/Navbar/Navbar";
 import Players from "./Components/Players/Players";
+import Subscribe from "./Components/Subscribe/Subscribe";
 import PropType from "prop-types";
 import { useState } from "react";
 import { Flip } from "react-toastify";
@@ -35,25 +36,28 @@ function App() {
     setCoin(coin - newCoin);
   };
 
-  const removedPlayerCoinAdd = (newCoin,player) => {
+  const removedPlayerCoinAdd = (newCoin, player) => {
     setCoin(coin + newCoin);
     Toast(`Player (${player.name}) removed!`, "warning");
   };
 
   return (
-    <div className="space-y-10">
+    <div>
       <ToastContainer />
       <NavBar coin={coin}></NavBar>
-      <Banner addCoin={addCoin}></Banner>
-      <Players
-        removedPlayerCoinAdd={removedPlayerCoinAdd}
-        minusCoin={minusCoin}
-        coin={coin}
-        Toast={Toast}
-      ></Players>
-      {/* <Toastify></Toastify> */}
-      {/* <Subscribe></Subscribe> */}
-      <Footer></Footer>
+      <div className="px-2">
+        <Banner addCoin={addCoin}></Banner>
+        <Players
+          removedPlayerCoinAdd={removedPlayerCoinAdd}
+          minusCoin={minusCoin}
+          coin={coin}
+          Toast={Toast}
+        ></Players>
+        <div>
+          <Subscribe></Subscribe>
+          <Footer></Footer>
+        </div>
+      </div>
     </div>
   );
 }

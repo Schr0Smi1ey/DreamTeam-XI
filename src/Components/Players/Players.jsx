@@ -43,7 +43,7 @@ const Players = ({ coin, minusCoin, removedPlayerCoinAdd, Toast }) => {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mb-10 pb-60">
       <div className="flex justify-between items-center mb-5">
         <div>
           <h1 className="font-bold text-xl lg:text-3xl">
@@ -56,16 +56,20 @@ const Players = ({ coin, minusCoin, removedPlayerCoinAdd, Toast }) => {
           <button
             onClick={() => setView("available")}
             className={`${
-              view === "available" ? "bg-[#E7FE29]" : "bg-gray-200"
-            } px-5 p-3 rounded-l-lg text font-bold`}
+              view === "available"
+                ? "bg-gradient-to-r from-sky-400 to bg-yellow-400"
+                : "bg-gray-200"
+            } px-3 sm:px-5 p-2 sm:p-3 rounded-l-lg text font-bold`}
           >
             Available
           </button>
           <button
             onClick={() => setView("selected")}
             className={`${
-              view === "selected" ? "bg-[#E7FE29]" : "bg-gray-200"
-            } px-5 p-3 rounded-r-lg font-bold`}
+              view === "selected"
+                ? "bg-gradient-to-r from-sky-400 to bg-yellow-400"
+                : "bg-gray-200"
+            } px-3 sm:px-5 p-2 sm:p-3 rounded-r-lg font-bold`}
           >
             Selected ({selectedPlayers.length})
           </button>
