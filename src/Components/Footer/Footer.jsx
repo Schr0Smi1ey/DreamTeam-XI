@@ -1,6 +1,21 @@
 import logo from "../../../public//Assets//banner-main.png";
+import { useState } from "react";
+import { addToLS } from "../../Utils/LocalStorage";
+import PropType from "prop-types";
 
-const Footer = () => {
+const Footer = ({ Toast }) => {
+  const [email, setEmail] = useState("");
+
+  const handleEmail = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleSubscribe = () => {
+    console.log(email);
+    Toast("Thank you for subscribing! We'll keep you updated.", "success");
+    addToLS(email);
+    setEmail("");
+  };
   return (
     <div className="bg-[#06091A] pt-60">
       <div className="container mx-auto p-20">
@@ -32,10 +47,15 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               <input
                 type="email"
+                value={email}
+                onChange={handleEmail}
                 placeholder="Enter your email"
                 className="p-2 pl-4 text-[#13131366] rounded-xl md:rounded-l-xl"
               />
-              <button className="w-full px-3 py-2 rounded-xl md:rounded-r-xl font-bold bg-gradient-to-r from-sky-400 to bg-yellow-400 text-black">
+              <button
+                onClick={handleSubscribe}
+                className="w-full px-3 py-2 rounded-xl md:rounded-r-xl font-bold bg-gradient-to-r from-sky-400 to bg-yellow-400 text-black"
+              >
                 Subscribe
               </button>
             </div>
@@ -49,4 +69,7 @@ const Footer = () => {
   );
 };
 
+Footer.propTypes = {
+  Toast: PropType.func,
+};
 export default Footer;

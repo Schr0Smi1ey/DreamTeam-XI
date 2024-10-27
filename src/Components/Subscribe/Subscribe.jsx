@@ -1,6 +1,19 @@
+import { addToLS } from "../../Utils/LocalStorage";
 import "./Subscribe.css";
+import { useState } from "react";
+import PropType from "prop-types";
 
-const Subscribe = () => {
+const Subscribe = ({ Toast }) => {
+  const [email, setEmail] = useState("");
+
+  const handleEmail = (event) => {
+    setEmail(event.target.value);
+  };
+  const handleSubsribe = () => {
+    Toast("Thank you for subscribing! We'll keep you updated.", "success");
+    addToLS(email);
+    setEmail("");
+  };
   return (
     <div className="container mx-auto md:p-6">
       <div className="relative">
@@ -15,10 +28,15 @@ const Subscribe = () => {
             <div className="flex justify-center flex-col md:flex-row md:space-x-2">
               <input
                 type="email"
+                value={email}
+                onChange={handleEmail}
                 placeholder="Enter your email"
                 className="text-[#13131366] border-2 border-[#13131366] mb-3 md:mb-0 mx-auto pl-4 p-2 rounded-lg"
               />
-              <button className="font-bold px-4 py-2 bg-gradient-to-r from-sky-400 to bg-yellow-400 rounded-lg">
+              <button
+                onClick={handleSubsribe}
+                className="font-bold px-4 py-2 bg-gradient-to-r from-sky-400 to bg-yellow-400 rounded-lg"
+              >
                 Subsribe
               </button>
             </div>
@@ -27,6 +45,10 @@ const Subscribe = () => {
       </div>
     </div>
   );
+};
+
+Subscribe.propTypes = {
+  Toast: PropType.func,
 };
 
 export default Subscribe;

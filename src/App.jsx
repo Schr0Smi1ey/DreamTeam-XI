@@ -5,7 +5,7 @@ import NavBar from "./Components/Navbar/Navbar";
 import Players from "./Components/Players/Players";
 import Subscribe from "./Components/Subscribe/Subscribe";
 import PropType from "prop-types";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Flip } from "react-toastify";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -28,6 +28,13 @@ function App() {
       bodyClassName: "font-medium text-lg",
     });
   };
+
+  useEffect(() => {
+    if (getStoredEmail().length !== 0) {
+      Toast("Welcome back! You are already subscribed!", "success");
+    }
+  }, []);
+
   const addCoin = (newCoin) => {
     setCoin(coin + newCoin);
     Toast("Credit Added to your Account!", "success");
@@ -54,13 +61,14 @@ function App() {
           Toast={Toast}
         ></Players>
         <div>
-          <Subscribe></Subscribe>
-          <Footer></Footer>
+          <Subscribe Toast={Toast}></Subscribe>
+          <Footer Toast={Toast}></Footer>
         </div>
       </div>
     </div>
   );
 }
+import { getStoredEmail } from "./Utils/LocalStorage";
 
 App.prototype = {
   coin: PropType.number.isRequired,

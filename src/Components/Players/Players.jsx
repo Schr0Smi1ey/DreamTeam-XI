@@ -29,10 +29,10 @@ const Players = ({ coin, minusCoin, removedPlayerCoinAdd, Toast }) => {
           "Not enough money to buy this player.Claim some Free Credit!",
           "error"
         );
-      } else if (selectedPlayers.length == 6) {
-        Toast("6 players added already! You can't add more players!", "error");
-      } else {
+      } else if (selectedPlayers.includes(player)) {
         Toast(`Player (${player.name}) is already added!`, "error");
+      } else {
+        Toast("6 players added already! You can't add more players!", "error");
       }
     }
   };
